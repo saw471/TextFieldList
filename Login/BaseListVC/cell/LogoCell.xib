@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="108" id="KGk-i7-Jjw" customClass="LogoCell">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="108"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="107.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="009" translatesAutoresizingMaskIntoConstraints="NO" id="uzJ-jr-Ozd">
+                        <rect key="frame" x="10" y="10" width="340" height="87.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="999" constant="87.5" id="KNt-q3-AAp"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uzJ-jr-Ozd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="A4Z-7X-F1t"/>
+                    <constraint firstAttribute="trailing" secondItem="uzJ-jr-Ozd" secondAttribute="trailing" constant="10" id="B0B-wS-u4m"/>
+                    <constraint firstItem="uzJ-jr-Ozd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="fv0-0L-6Fu"/>
+                    <constraint firstAttribute="bottom" secondItem="uzJ-jr-Ozd" secondAttribute="bottom" constant="10" id="gcf-XF-dK6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="logoImage" destination="uzJ-jr-Ozd" id="VFF-Ce-i0o"/>
+            </connections>
+            <point key="canvasLocation" x="45" y="84"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="009" width="842" height="448"/>
+    </resources>
+</document>
